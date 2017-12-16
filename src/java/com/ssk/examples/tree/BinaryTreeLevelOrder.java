@@ -13,11 +13,11 @@ public class BinaryTreeLevelOrder {
         while (!queue.isEmpty()) {
             int levelNum = queue.size();
             List<Integer> levelNodes = new LinkedList();
-            for (int i = 0; i < levelNum; i++) {
+//            for (int i = 0; i < levelNum; i++) {
                 if (queue.peek().left != null) queue.offer(queue.peek().left);
                 if (queue.peek().right != null) queue.offer(queue.peek().right);
                 levelNodes.add(queue.poll().val);
-            }
+//            }
             nodeList.add(levelNodes);
         }
         return nodeList;
