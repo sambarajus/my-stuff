@@ -9,7 +9,11 @@ public class LongestPalindromeTest {
     @Test
     public void longestPalindrome() throws Exception {
 
-        assertEquals("anana", palindrome.longestPalindrome("banana"));
+//        assertEquals("anana", palindrome.longestPalindrome("banana"));
+//        assertEquals("aba", palindrome.longestPalindrome("babad"));
+//        assertEquals("bb", palindrome.longestPalindrome("cbbd"));
+//        assertEquals("bb", palindrome.longestPalindrome("bb"));
+        assertEquals("bbbb", palindrome.longestPalindrome("bbbb"));
     }
 
 }
