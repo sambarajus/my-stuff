@@ -16,15 +16,10 @@ public class Permutation {
 
         } else {
             for (int j = i; j <= n; j++) {
-                //swap str[i] and str[j]
                 char ch = str[i];
                 str[i] = str[j];
                 str[j] = ch;
                 result.addAll(permute(str, i + 1, n));
-                //swap str[i] and str[j]
-//                ch = str[i];
-//                str[i] = str[j];
-//                str[j] = ch;
             }
         }
         return result;

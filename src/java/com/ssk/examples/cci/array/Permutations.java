@@ -45,9 +45,4 @@ public class Permutations {
         }
         return strSet;
     }
-    public List<List<Integer>> permuteUnique(int[] nums){
-        List<List<Integer>> result = new ArrayList<>();
-
-        return result;
-    }
 }
