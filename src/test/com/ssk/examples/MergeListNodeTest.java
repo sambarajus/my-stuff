@@ -1,5 +1,7 @@
 package com.ssk.examples;
 
+import com.ssk.examples.ds.linkedlist.ListNode;
+import com.ssk.examples.ds.linkedlist.MergeListNode;
 import org.junit.Test;
 
 import java.util.concurrent.ThreadLocalRandom;

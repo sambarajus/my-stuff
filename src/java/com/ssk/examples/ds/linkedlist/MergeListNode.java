@@ -1,4 +1,4 @@
-package com.ssk.examples;
+package com.ssk.examples.ds.linkedlist;
 
 /**
  * Created by 212561830 on 11/12/17.
