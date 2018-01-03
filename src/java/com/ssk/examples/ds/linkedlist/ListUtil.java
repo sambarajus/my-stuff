@@ -17,4 +17,12 @@ public class ListUtil {
 
         return one;
     }
+    public void printList(ListNode node){
+        ListNode current = node;
+        while (current!=null){
+            System.out.print(current.val + " -> ");
+            current = current.next;
+        }
+        System.out.println("-----");
+    }
 }

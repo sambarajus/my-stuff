@@ -73,4 +73,33 @@ public class AddDelete {
         current.next = null;
         return head;
     }
+
+
+    ListNode InsertNth(ListNode head, int data, int position) {
+        // This is a "method-only" submission.
+        // You only need to complete this method.
+
+        ListNode n = new ListNode(data);
+
+        if(position == 0){
+            n.next = head;
+            return n;
+        }
+
+        int ct = 0;
+        ListNode currentNode = head;
+        ListNode prev = currentNode;
+        while(currentNode!=null){
+            if(ct==position){
+                prev.next = n;
+                n.next = currentNode;
+                return head;
+            }
+            ct++;
+            prev = currentNode;
+            currentNode = currentNode.next;
+        }
+        return head;
+    }
+
 }

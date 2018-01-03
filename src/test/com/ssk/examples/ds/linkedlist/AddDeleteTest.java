@@ -53,4 +53,25 @@ public class AddDeleteTest {
         assertNull(fifthNode.next);
     }
 
+
+    @Test
+    public void InsertNode() throws Exception{
+        ListNode nullNode = new ListNode();
+        ListNode n = addDelete.InsertNth(nullNode, 3,0);
+        listUtil.printList(n);
+
+//        5 1
+//        4 2
+//        2 3
+//        10 1
+         n = addDelete.InsertNth(n, 5,1);
+        listUtil.printList(n);
+         n = addDelete.InsertNth(n, 4,2);
+        listUtil.printList(n);
+         n = addDelete.InsertNth(n, 2,3);
+        listUtil.printList(n);
+         n = addDelete.InsertNth(n, 10,1);
+        listUtil.printList(n);
+
+    }
 }
